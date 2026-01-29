@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UGSRC App Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #1c1c1e;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      font-weight: 700;
+      color: #1c1c1e;
+    }
+    h1 { font-size: 32px; margin-bottom: 16px; }
+    h2 { font-size: 24px; margin-top: 32px; margin-bottom: 12px; }
+    h3 { font-size: 18px; margin-top: 24px; margin-bottom: 8px; }
+    p { margin-bottom: 12px; }
+    ul { margin-bottom: 12px; padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .last-updated { font-size: 14px; color: #555555; margin-bottom: 24px; }
+    .footer { font-size: 14px; color: #555555; margin-top: 48px; }
+    a { color: #007aff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>UGSRC App Privacy Policy</h1>
+  <p class="last-updated">Last Updated: January 29, 2026</p>
+
+  <h2>Introduction</h2>
+  <p>
+    Welcome to the UGSRC app, the University of Ghana Student Representative Council mobile application. 
+    We are committed to protecting your privacy and ensuring the security of your personal information. 
+    This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the UGSRC app for announcements, events, scholarships, clubs, blogs, polls, AI assistant (Ujamaa), real-time feedback chat, and other student services.
+  </p>
+
+  <h2>Information We Collect</h2>
+
+  <h3>Personal Information</h3>
+  <p>We collect personal information that you provide during registration and use:</p>
+  <ul>
+    <li>Full name and email address</li>
+    <li>Academic details: program, level (collected during onboarding)</li>
+    <li>Scholarship applications: University of Ghana Student ID number, personal statements</li>
+    <li>Event registrations and club interests</li>
+    <li>Blog comments and poll responses</li>
+    <li>Feedback submissions (may be anonymous)</li>
+  </ul>
+
+  <h3>Usage & Device Information</h3>
+  <p>We automatically collect information about your app usage:</p>
+  <ul>
+    <li>Features accessed, content viewed, search queries</li>
+    <li>Device type, OS, app version, push notification tokens</li>
+    <li>Error logs and performance data for app improvement</li>
+    <li>Real-time feedback chat data (via Socket.io)</li>
+    <li>Poll votes, blog likes/comments, event registrations</li>
+    <li>AI assistant (Ujamaa) conversations and token usage</li>
+  </ul>
+
+  <h3>Authentication Data</h3>
+  <p>Passwordless authentication via OTP is managed through Supabase:</p>
+  <ul>
+    <li>Hashed OTP codes (not stored in plain text)</li>
+    <li>OTP verification records with rate limiting</li>
+    <li>Authentication tokens and session data</li>
+    <li>Email verification status and login history</li>
+  </ul>
+
+  <h2>How We Use Your Information</h2>
+  <p>We use the information we collect for the following purposes:</p>
+  <ul>
+    <li>Account management via passwordless OTP authentication</li>
+    <li>Delivering personalized content: announcements, events, blogs, scholarships</li>
+    <li>Processing scholarship applications and tracking status</li>
+    <li>Event registrations and automated reminders</li>
+    <li>Club information and associated content delivery</li>
+    <li>Conducting polls and displaying aggregated results</li>
+    <li>Powering the AI assistant (Ujamaa) with trusted campus data</li>
+    <li>Real-time feedback chat between students and SRC executives</li>
+    <li>Managing notification preferences and quiet hours</li>
+    <li>Sending push notifications based on your settings</li>
+    <li>App performance optimization, analytics, and bug fixes</li>
+    <li>Ensuring compliance with University of Ghana policies</li>
+  </ul>
+
+  <h2>Data Sharing and Disclosure</h2>
+  <p>We do NOT sell, rent, or trade your personal information. We may share data only in these circumstances:</p>
+  <ul>
+    <li>UG Administration: For enrollment verification and official purposes</li>
+    <li>SRC Executives: For feedback routing, scholarship reviews, and event management</li>
+    <li>Service Providers: Supabase (database/auth/storage), Railway (hosting), Socket.io (real-time chat), OpenAI (AI assistant), Tavily (AI web searches)</li>
+    <li>Club Executives: Limited access to club-related content and member engagement data</li>
+    <li>Legal Requirements: When required by law or to protect rights/safety</li>
+    <li>Business Transfers: In case of merger or university reorganization</li>
+  </ul>
+
+  <h2>Data Security</h2>
+  <p>We implement comprehensive security measures to protect your information:</p>
+  <ul>
+    <li>TLS/HTTPS encryption for all data in transit</li>
+    <li>Bcrypt hashing for OTP codes (not stored in plain text)</li>
+    <li>OTP rate limiting to prevent brute-force attacks</li>
+    <li>JWT token-based authentication with secure session management</li>
+    <li>Secure local storage (iOS Keychain, Android Keystore)</li>
+    <li>Row-Level Security (RLS) policies in Supabase database</li>
+    <li>Role-based access controls for executives and club managers</li>
+    <li>Supabase Storage policies for secure file uploads</li>
+    <li>Regular security updates, code reviews, and penetration testing</li>
+    <li>Data breach notification within 72 hours if incident occurs</li>
+  </ul>
+
+  <h2>Your Rights</h2>
+  <ul>
+    <li>Access and review your personal data</li>
+    <li>Request correction of inaccurate information</li>
+    <li>Request deletion of your personal data</li>
+    <li>Object to processing of your data</li>
+    <li>Withdraw consent at any time</li>
+    <li>Export your data in a portable format</li>
+  </ul>
+
+  <h2>Data Retention</h2>
+  <ul>
+    <li>Active students: Data retained during enrollment + 1 year after graduation</li>
+    <li>Scholarship applications: Retained for 3 years after submission</li>
+    <li>Feedback & chat messages: Retained for 2 years from submission</li>
+    <li>AI chat history: Retained until user deletion or 1 year after graduation</li>
+    <li>Poll responses: Retained indefinitely for historical data and analytics</li>
+    <li>Blog comments and likes: Retained for 2 years or until content deletion</li>
+    <li>Event registrations: Retained for 1 year after event date</li>
+    <li>OTP records: Auto-expire after 10 minutes and deleted after 30 days</li>
+    <li>Usage logs: Retained for 12 months for analytics</li>
+    <li>Graduated/inactive: Account archived after 1 year, deleted after 2 more years</li>
+    <li>Upon deletion request: Data deleted within 30 days (legal exceptions apply)</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>
+    The UGSRC app is intended for use by registered University of Ghana students who are typically 18 years of age or older. 
+    We do not knowingly collect personal information from children under 16. 
+    If we become aware that we have collected personal information from a child under 16, we will take steps to delete such information.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. 
+    You are advised to review this Privacy Policy periodically for any changes.
+  </p>
+
+  <h2>Third-Party Services</h2>
+  <ul>
+    <li>Supabase: Database, passwordless authentication, file storage, and real-time subscriptions</li>
+    <li>Railway: Backend server hosting infrastructure</li>
+    <li>Socket.io: Real-time messaging for feedback chat</li>
+    <li>OpenAI: Powers the AI assistant (Ujamaa) with GPT-4 technology</li>
+    <li>Tavily: AI web searches</li>
+    <li>Mailgun: Transactional emails for OTP delivery</li>
+    <li>Expo/React Native: Mobile app development framework</li>
+    <li>PascoHub: Academic platform for past exam questions</li>
+    <li>All third-party services comply with data protection regulations</li>
+  </ul>
+
+  <h2>Device Permissions</h2>
+  <ul>
+    <li>Media Library (Photos and Documents): For uploading past exam questions to the PascoHub service</li>
+    <li>Notifications: For push notifications about events, announcements, and updates</li>
+    <li>Local Storage: For theme preferences, onboarding status, and auth tokens</li>
+    <li>Network: For API communication and real-time chat</li>
+    <li>All permissions are requested with clear explanations and can be revoked</li>
+  </ul>
+
+  <h2>Analytics & Tracking</h2>
+  <ul>
+    <li>Anonymous usage statistics to improve app features</li>
+    <li>Error logs for debugging and performance optimization</li>
+    <li>AI usage metrics (tokens consumed, conversation length) for fair usage</li>
+    <li>Feature engagement data (poll participation, event registrations, blog views)</li>
+    <li>No data is sold to advertisers or marketing companies</li>
+    <li>Analytics are used solely for improving student experience</li>
+  </ul>
+
+  <h2>AI Assistant Data</h2>
+  <ul>
+    <li>Conversations are stored in your chat history for continuity</li>
+    <li>Questions are sent to OpenAI GPT-4 along with trusted campus data</li>
+    <li>No personal identifying information is sent to OpenAI beyond your question</li>
+    <li>Chat history can be deleted at any time from the AI tab</li>
+    <li>Daily usage limits prevent abuse and ensure fair access</li>
+    <li>AI responses are generated based on official school documents, web searches, and app content (announcements, events, blogs, etc.)</li>
+    <li>We do not train custom AI models on your conversations</li>
+  </ul>
+
+  <h2>Notification Preferences</h2>
+  <ul>
+    <li>Customize notifications by category (announcements, events, polls, blogs, scholarships, clubs)</li>
+    <li>Enable/disable push notifications</li>
+    <li>Set quiet hours to silence notifications during specific times</li>
+    <li>Opt out of specific notification types while keeping others active</li>
+    <li>Urgent announcements may override some settings for safety</li>
+    <li>All preferences are synced across devices</li>
+  </ul>
+
+  <h2>PascoHub (Third-Party Service)</h2>
+  <ul>
+    <li>PascoHub is NOT operated by UGSRC—it is a third-party service with its own management</li>
+    <li>Requires separate authentication with your email (independent from UGSRC login)</li>
+    <li>Provides access to past exam questions and study materials uploaded by students</li>
+    <li>Uses a credit system: earn credits by uploading verified materials, spend credits to download</li>
+    <li>Your PascoHub data (uploads, downloads, credits) is managed by PascoHub, not the SRC</li>
+    <li>The SRC does not have access to your PascoHub activity or personal data</li>
+    <li>PascoHub has its own privacy policy and terms of service—please review them</li>
+    <li>Integration is provided for convenience, but data handling is governed by PascoHub policies</li>
+    <li>For PascoHub-specific issues, contact PascoHub support directly</li>
+    <li>The SRC is not responsible for PascoHub data practices, service availability, or content accuracy</li>
+  </ul>
+
+  <div class="footer">
+    For questions about this policy, please contact the SRC administration.
+  </div>
+</body>
+</html>
